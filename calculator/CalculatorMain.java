@@ -8,7 +8,7 @@ public class CalculatorMain
 
         Get operator1 = new Get();
         operator1.getNumber();
-
+        System.out.println(operator1.number);
     }
 
 }
