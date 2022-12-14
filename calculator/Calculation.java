@@ -20,7 +20,7 @@ public class Calculation
     int multiplication(int firstNumber, int secondNumber)
     {
 
-        return firstNumber * secondNumber;
+        return firstNumber * secondNumber
 
     }
 
