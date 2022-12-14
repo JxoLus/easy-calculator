@@ -3,11 +3,11 @@ package calculator;
 public class CalculatorMain
 {
 
-    public void main()
+    public static void main(String[] args)
     {
 
         Get operator1 = new Get();
-        operator1.getNumber()
+        operator1.getNumber();
 
     }
 
