@@ -8,6 +8,7 @@ public class Get
     int firstNumber, secondNumber;
     String type;
     int[] numbers = new int[3];
+    
     Scanner sc = new Scanner(System.in);
 
     void getNumber()
