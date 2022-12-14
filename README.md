@@ -1,3 +1,2 @@
 # easy-calculator
-just for studying
-by. xoLus
+for studying
