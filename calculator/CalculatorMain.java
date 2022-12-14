@@ -10,6 +10,8 @@ public class CalculatorMain
 
         Operator operator = new Operator();
         
+        int result = operator.operation();
+
         if (operator.error == true)
         {
 
@@ -19,7 +21,7 @@ public class CalculatorMain
         else
         {
 
-            System.out.println("ANSWER : " + operator.operation());
+            System.out.println("ANSWER : " + result);
 
         }
 

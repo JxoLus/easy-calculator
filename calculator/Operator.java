@@ -8,28 +8,28 @@ public class Operator
     public int operation()
     {
 
-        Get operator = new Get();
+        Get get = new Get();
         Calculation calc = new Calculation();
 
-        operator.getNumber();
+        get.getNumber();
 
-        switch (operator.type)
+        switch (get.type)
         {
 
             case "+":
-                return calc.addition(operator.firstNumber, operator.secondNumber);
+                return calc.addition(get.firstNumber, get.secondNumber);
             
             case "-":
-                return calc.subtraction(operator.firstNumber, operator.secondNumber);
+                return calc.subtraction(get.firstNumber, get.secondNumber);
 
             case "*":
-                return calc.multiplication(operator.firstNumber, operator.secondNumber);
+                return calc.multiplication(get.firstNumber, get.secondNumber);
 
             case "/":
             try
             {
 
-                return calc.division(operator.firstNumber, operator.secondNumber);
+                return calc.division(get.firstNumber, get.secondNumber);
 
             } catch (ArithmeticException e)
                 {
