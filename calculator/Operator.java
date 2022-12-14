@@ -27,17 +27,17 @@ public class Operator
 
             case "/":
             try
-            {
-
-                return calc.division(get.firstNumber, get.secondNumber);
-
-            } catch (ArithmeticException e)
                 {
 
-                    this.error = true;
-                    return 0;
+                    return calc.division(get.firstNumber, get.secondNumber);
 
-                }
+                } catch (ArithmeticException e)
+                    {
+
+                        this.error = true;
+                        return 0;
+
+                    }
                 
 
             default :
