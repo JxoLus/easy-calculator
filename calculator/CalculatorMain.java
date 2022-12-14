@@ -10,7 +10,18 @@ public class CalculatorMain
 
         Operator operator = new Operator();
         
-        operator.operation();
+        if (operator.error == true)
+        {
+
+            System.out.println("Try Again (Error)");
+
+        }
+        else
+        {
+
+            System.out.println("ANSWER : " + operator.operation());
+
+        }
 
     }
 

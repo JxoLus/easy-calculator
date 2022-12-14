@@ -3,7 +3,9 @@ package calculator;
 public class Operator
 {
 
-    public void operation()
+    boolean error = false;
+
+    public int operation()
     {
 
         Get operator = new Get();
@@ -15,19 +17,32 @@ public class Operator
         {
 
             case "+":
-                calc.addition(operator.firstNumber, operator.secondNumber);
+                return calc.addition(operator.firstNumber, operator.secondNumber);
             
             case "-":
-                calc.subtraction(operator.firstNumber, operator.secondNumber);
+                return calc.subtraction(operator.firstNumber, operator.secondNumber);
 
             case "*":
-                calc.multiplication(operator.firstNumber, operator.secondNumber);
+                return calc.multiplication(operator.firstNumber, operator.secondNumber);
 
             case "/":
-                calc.division(operator.firstNumber, operator.secondNumber);
+            try
+            {
 
-            break;
+                return calc.division(operator.firstNumber, operator.secondNumber);
 
+            } catch (ArithmeticException e)
+                {
+
+                    this.error = true;
+                    return 0;
+
+                }
+                
+
+            default :
+                this.error = true;
+                return 0;
         }
 
     }
