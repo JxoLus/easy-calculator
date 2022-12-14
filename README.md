@@ -1,2 +1,2 @@
 # easy-calculator
-for studying
+just for studying
