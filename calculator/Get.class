@@ -1,0 +1,17 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class Get
+{
+
+    int getNumber()
+    {
+
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        return number;
+
+    }
+
+}
