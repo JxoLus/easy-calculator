@@ -8,12 +8,10 @@ public class CalculatorMain
 
         System.out.println("-----xoLus-----\nEasy Calculator");
 
-        Get operator1 = new Get();
-        operator1.getNumber();
-        System.out.println(operator1.firstNumber);
-        System.out.println(operator1.secondNumber);
-        System.out.println(operator1.type);
+        Operator operator = new Operator();
         
+        operator.operation();
+
     }
 
 }
